@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Zone Example</title>
+</head>
+<body>
+    <h1>Current Timezone: {{ timezone }}</h1>
+    {% if user %}
+        <p>Logged in as: {{ user.name }}</p>
+    {% else %}
+        <p>You are not logged in.</p>
+    {% endif %}
+</body>
+</html>
