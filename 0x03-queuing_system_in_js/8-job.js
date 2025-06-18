@@ -1,9 +1,9 @@
 import kue from 'kue';
 
 /**
- * Creates push notification jobs and tracks their progress.
- * @param {Array} jobs - An array of job objects containing phoneNumber and message.
- * @param {Queue} queue - The Kue queue to add jobs to.
+ * Create push notification jobs from a list
+ * @param {Array} jobs - list of job objects
+ * @param {Queue} queue - Kue queue instance
  */
 const createPushNotificationsJobs = (jobs, queue) => {
   if (!Array.isArray(jobs)) {
